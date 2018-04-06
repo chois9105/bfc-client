@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>BFC App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bfc-app.css">
+</head>
+<body class="bg-bidding">
+<div class="view-header fixed">
+    <button value="back" class="btn-back"><span class="icon"></span></button>
+</div>
+<div class="view-body">
+    <div class="chef-profile">
+        <div class="chef-img">
+            <div class="img"><img src="images/img-chef.jpg"></div>
+            <span class="fav">
+                <img src="images/icon-fav-not.svg">
+                <!-- favorite한 상태면 <img src="images/icon-fav.svg"> -->
+            </span>
+        </div>
+        <div class="chef-info">
+            <h1 class="chef-name">Walter Thenisch</h1>
+            <ul class="chef-feat">
+                <li><span class="icon-role"><img src="images/icon-role.svg"></span> Owner Chef</li>
+                <li><span class="icon-exp"><img src="images/icon-exp.svg"></span> 10years</li>
+                <li><span class="icon-nation"><img src="images/icon-nation.svg"></span> France</li>
+                <li><span class="icon-type"><img src="images/icon-type.svg"></span> French Cuisine</li>
+                <li><span class="icon-location"><img src="images/icon-location.svg"></span> Paris</li>
+                <li><span class="icon-salary"><img src="images/icon-salary.svg"></span> €100,000</li>
+            </ul>
+            <button class="btn-profile secondary-br">View more profile</button>
+        </div>
+    </div>
+    <ul class="bidding-info">
+        <li class="info-bidder">
+            <h2>Bidder</h2>
+            <div>
+                <img src="images/icon-bidding-not.svg">
+                <img src="images/img-logo.png">
+                <img src="images/img-logo.png">
+                <img src="images/img-logo.png">
+                <img src="images/img-logo.png">
+                <img src="images/img-logo.png">
+                <span class="icon-bidder-more">+132</span>
+            </div>
+        </li>
+        <li class="info-fav">
+            <h2>Favorite</h2>
+            <p><span class="icon"><img src="images/icon-fav-s.svg"></span> 121</p>
+        </li>
+        <li class="info-days">
+            <h2>Days to go</h2>
+           <p> <span class="icon"><img src="images/icon-days.svg"></span> 121</p>
+        </li>
+    </ul>
+</div>
+<div class="btn-footer">
+    <button class="btn-bidding"><span class="icon"><img src="images/icon-bidding-w.svg"></span>Bidding</button>
+    <button class="btn-favorite"><span class="icon"><img src="images/icon-fav-w.svg"></span>Favorite</button>
+</div>
+</body>
+</html>

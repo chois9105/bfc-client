@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>BFC App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bfc-app.css">
+</head>
+<body class="bg-me">
+<div class="view-header">
+    <h1 class="logo"><img src="images/bfc.svg"></h1>
+</div>
+<div class="view-body">
+    <div class="profile-area">
+        <span class="logo-seperate"></span>
+        <h1 class="chef">Walter Thenisch</h1>
+        <p class="email">Kingoftheworld@chef.com</p>
+        <div class="profile-img">
+            <div class="img"><img src="images/img-profile.png"></div>
+        </div>
+    </div>
+    <div class="me-btn-area">
+        <button class="btn-me primary-fl">Exhibition</button>
+        <!-- 상태 3가지
+        <button class="btn-me primary-fl">You haven't filled your Profile!</button>
+        <button class="btn-me primary-fl">Profile Modify & Exhibit</button>
+        -->
+        <button class="btn-me secondary-br btn-action">Favorites</button>
+        <button class="btn-me secondary-br">Reset Password</button>
+        <a href="#" class="forgot">Log out</a>
+    </div>
+</div>
+<div class="view-footer">
+    <ul class="tab-menu">
+        <li><a href="#" class="tab-news">News</a></li>
+        <li><a href="#" class="tab-community">Community</a></li>
+        <li><a href="#" class="tab-search">Search</a></li>
+        <li><a href="#" class="tab-bidding">Bidding</a></li>
+        <li><a href="#" class="tab-me selected">Me</a></li>
+    </ul>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script>
+    $( function() {
+        $('.btn-action').click(function() {
+            location.replace('46-favorite-list.html');
+        });
+    } );
+</script>
+</body>
+</html>

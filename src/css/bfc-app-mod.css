@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+디지인 작업 외에 추가로 필요한 부분 작업.
+*/
+
+
+/*
+16. 08. 05
+position , left, top, right, bottom 에 적용되는 %가 iOS 에서 적용되지 않아 vw, vh 로 변경 하였습니다
+
+# 수정한 부분 #
+sign-area
+signup-area
+role-box
+modal-header
+
+16. 08. 06
+새로 전달받은 CSS 적용
+
+16. 08. 09
+.gate  ::  position:relative;  <- 화면이 나오지 않는 현상 발생 ( 삭제 후 정상동작 )
+.seperate span.bar  ->  .seperate span.linebar  로 변경   [로그인 하단 회색 선] ( ionic css 상의 네임중복방지 )
+
+*/
+
+
+.btn-exhibit-selected {
+  border:1px solid #FF533D;
+  color:#FF533D;
+  background: url('../images/icon-done-red.svg') no-repeat 98% center;
+}
+
+
+
+
+
+
+.view-footer-mod {
+  width: 100vmax;
+  height:50px;
+  position:fixed;
+  box-sizing: border-box;
+  z-index: 100;
+  bottom:0;
+  background: #323B46;
+}
+
+.animate-enter,
+.animate-leave
+{
+  -webkit-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+
+.animate-enter {
+  top: -100%;
+}
+.animate-enter.animate-enter-active {
+  top: 0;
+}
+
+.animate-leave {
+  top: 0;
+}
+.animate-leave.animate-leave-active{
+  top: 100%;
+}
+
+.bar-header {
+  height: 110px !important;
+}
+.bar-header > * {
+  margin-top: 0px !important;
+}
+

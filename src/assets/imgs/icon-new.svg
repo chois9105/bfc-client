@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon new</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="BFC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="25.-filter" transform="translate(-242.000000, -401.000000)">
+            <g id="icon-new" transform="translate(242.000000, 401.000000)">
+                <rect id="Rectangle-4" fill="#FF533D" x="0" y="0" width="12" height="12" rx="6"></rect>
+                <polygon id="N" fill="#FFFFFF" points="8.11901082 3 9 3 9 9.47758887 8.20247295 9.47758887 3.87171561 4.49304482 3.87171561 9.47758887 3 9.47758887 3 3 3.7511592 3 8.11901082 8.02627512"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

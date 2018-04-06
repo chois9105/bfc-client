@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <title>BFC App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bfc-app.css">
+</head>
+<body>
+<div class="view-header bfc fixed">
+    <h1 class="logo"><img src="images/bfc.svg"></h1>
+    <button value="back" class="btn-back"><span class="icon"></span></button>
+</div>
+<div class="view-body">
+    <ul class="community-tab tabs">
+        <li class="active" rel="tab1">My post<span class="my-badge"><img src="images/icon-new.svg"></span></li>
+        <li rel="tab2">FreeBoard</li>
+        <li rel="tab3">Recipes</li>
+        <li rel="tab4">Food&Foodstuff</li>
+    </ul>
+    <div class="tab_container">
+        <ul class="comm-list tab_content" id="tab1">
+            <li>
+                <div class="comm-item">
+                    <div class="comm-desc">
+                        <h2 class="title">Roasted brassicas with puy lentils & halloumi</h2>
+                        <div class="author">
+                            <strong class="category">FreeBoard</strong>
+                            jadegreen&nbsp;&nbsp;16 May</div>
+                        <p class="summary">Preheat the oven to 220ºC/gas 7.
+                            Cut the broccoli and cauliflower into even-sized florets, then spread out in a single layer in a roasting tray. Drizzle with olive oil, sprinkle with baharat and season with sea salt and black pepper.</p>
+                    </div>
+                    <div class="comm-img">
+                        <img src="images/data-community.jpg">
+                    </div>
+                    <div class="comm-feedback">
+                        <div class="comm-favorite">
+                            <span class="icon"><img src="images/icon-fav-s.svg"></span>
+                        </div>
+                        <div class="comm-reply">
+                            <span class="icon"><img src="images/icon-reply.svg"></span>
+                            45
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="comm-item">
+                    <div class="comm-desc">
+                        <h2 class="title">Roasted brassicas with puy lentils & halloumi</h2>
+                        <p class="author"><strong class="category">Recipes</strong>jadegreen&nbsp;&nbsp;16 May</p>
+                        <p class="summary">Preheat the oven to 220ºC/gas 7.
+                            Cut the broccoli and cauliflower into even-sized florets, then spread out in a single layer in a roasting tray. Drizzle with olive oil, sprinkle with baharat and season with sea salt and black pepper.</p>
+                    </div>
+                    <div class="comm-feedback">
+                        <div class="comm-favorite">
+                            <span class="icon"><img src="images/icon-fav-s-active.svg" style="width:16px;"></span>
+                        </div>
+                        <div class="comm-reply">
+                            <span class="icon"><img src="images/icon-reply.svg"></span>
+                            45
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="comm-list tab_content" id="tab2">
+            <li>
+                <div class="comm-item">
+                    <div class="comm-desc">
+                        <h2 class="title">Roasted brassicas with puy lentils & halloumi</h2>
+                        <p class="author"><strong class="category">FreeBoard</strong>jadegreen&nbsp;&nbsp;16 May</p>
+                        <p class="summary">Preheat the oven to 220ºC/gas 7.
+                            Cut the broccoli and cauliflower into even-sized florets, then spread out in a single layer in a roasting tray. Drizzle with olive oil, sprinkle with baharat and season with sea salt and black pepper.</p>
+                    </div>
+                    <div class="comm-img">
+                        <img src="images/data-community.jpg">
+                    </div>
+                    <div class="comm-feedback">
+                        <div class="comm-favorite">
+                            <span class="icon"><img src="images/icon-fav-s.svg"></span>
+                        </div>
+                        <div class="comm-reply">
+                            <span class="icon"><img src="images/icon-reply.svg"></span>
+                            45
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="comm-item">
+                    <div class="comm-desc">
+                        <h2 class="title">Roasted brassicas with puy lentils & halloumi</h2>
+                        <p class="author"><strong class="category">FreeBoard</strong>jadegreen&nbsp;&nbsp;16 May</p>
+                        <p class="summary">Preheat the oven to 220ºC/gas 7.
+                            Cut the broccoli and cauliflower into even-sized florets, then spread out in a single layer in a roasting tray. Drizzle with olive oil, sprinkle with baharat and season with sea salt and black pepper.</p>
+                    </div>
+                    <div class="comm-img">
+                        <img src="images/data-community.jpg">
+                    </div>
+                    <div class="comm-feedback">
+                        <div class="comm-favorite">
+                            <span class="icon"><img src="images/icon-fav-s-active.svg"></span>
+                        </div>
+                        <div class="comm-reply">
+                            <span class="icon"><img src="images/icon-reply.svg"></span>
+                            45
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="tab3" class="tab_content">tab3</div>
+        <div id="tab4" class="tab_content">tab4</div>
+    </div>
+
+</div>
+<div class="view-footer">
+    <ul class="tab-menu">
+        <li><a href="#" class="tab-news">News</a></li>
+        <li><a href="#" class="tab-community">Community</a></li>
+        <li><a href="#" class="tab-search">Search</a></li>
+        <li><a href="#" class="tab-bidding">Bidding</a></li>
+        <li><a href="#" class="tab-me selected">Me</a></li>
+    </ul>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script>
+    $( function() {
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_content").hide()
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn()
+        });
+        $('.comm-desc, .comm-img').click(function() {
+            location.replace('52-community-view.html');
+        });
+        $('.btn-create-post').click(function() {
+            location.replace('53-community-create.html');
+        });
+    } );
+</script>
+</body>
+</html>

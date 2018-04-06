@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon del</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="BFC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="25.-filter" transform="translate(-212.000000, -401.000000)">
+            <g id="icon-del" transform="translate(211.000000, 401.000000)">
+                <rect id="Rectangle-4" fill="#FF533D" x="1" y="0" width="12" height="12"></rect>
+                <path d="M6.95,6.05 L6.95,2.45868456 C6.95,2.20488751 6.74852814,2 6.5,2 C6.25874023,2 6.05,2.20536007 6.05,2.45868456 L6.05,6.05 L2.45868456,6.05 C2.20488751,6.05 2,6.25147186 2,6.5 C2,6.74125977 2.20536007,6.95 2.45868456,6.95 L6.05,6.95 L6.05,10.5413154 C6.05,10.7951125 6.25147186,11 6.5,11 C6.74125977,11 6.95,10.7946399 6.95,10.5413154 L6.95,6.95 L10.5413154,6.95 C10.7951125,6.95 11,6.74852814 11,6.5 C11,6.25874023 10.7946399,6.05 10.5413154,6.05 L6.95,6.05 Z" id="ic_signup_close" fill="#FFFFFF" transform="translate(6.500000, 6.500000) rotate(-45.000000) translate(-6.500000, -6.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

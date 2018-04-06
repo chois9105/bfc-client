@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>BFC App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bfc-app.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+</head>
+<body class="bg-bidding">
+<div class="view-header">
+    <h1 class="logo"><img src="images/bfc.svg"></h1>
+</div>
+<div class="view-body">
+    <!-- popular Bidding -->
+    <div class="swiper-container swiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide pop-bidding">
+                <span class="logo-seperate"></span>
+                <h1 class="pop-chef">Walter Thenisch</h1>
+                <p class="pop-type">French Cuisine</p>
+                <div class="profile-img">
+                    <div class="img"><img src="images/img-profile.png"></div>
+                    <span class="fav"><img src="images/icon-fav.svg"></span>
+                </div>
+                <div class="pop-bidder">
+                    <img src="images/icon-bidding-not.svg">
+                    <img src="images/img-logo.png">
+                    <img src="images/img-logo.png">
+                    <img src="images/img-logo.png">
+                    <img src="images/img-logo.png">
+                    <img src="images/img-logo.png">
+                    <span class="icon-bidder-more">+132</span>
+                </div>
+            </div>
+            <div class="swiper-slide pop-bidding">
+                <span class="pop-seperate"></span>
+                <h1 class="pop-chef">Jamie Oliver</h1>
+                <p class="pop-type">Contemporary Cuisine</p>
+                <div class="profile-img">
+                    <div class="img"><img src="images/img-chef.jpg"></div>
+                    <span class="fav"><img src="images/icon-fav.svg"></span>
+                </div>
+                <div class="pop-bidder">
+                    <img src="images/icon-bidding-not.svg">
+                    <img src="images/logo-hilton.jpg">
+                    <img src="images/logo-hilton.jpg">
+                    <img src="images/logo-hilton.jpg">
+                    <img src="images/logo-hilton.jpg">
+                    <img src="images/logo-hilton.jpg">
+                    <span class="icon-bidder-more">+ 132</span>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- //popular Bidding -->
+    <div class="bidding-filter">
+        150 Cases of Biding
+        <button value="filter" class="btn-filter"><span class="icon"></span></button>
+    </div>
+    <ul class="bidding-list">
+        <li>
+            <div class="bidding-list-item">
+                <div class="bidding-list-img">
+                    <img src="images/img-profile.png">
+                    <span class="fav"><img src="images/icon-fav.svg"></span>
+                </div>
+                <div class="bidding-list-detail">
+                    <h2 class="bidding-list-chef">Watsan Chantarasombat</h2>
+                    <div class="bidding-list-bidder">
+                        <img src="images/img-logo.png">
+                        <img src="images/img-logo.png">
+                        <img src="images/img-logo.png">
+                        <img src="images/img-logo.png">
+                        <img src="images/img-logo.png">
+                        <span class="icon-bidder-more"><img src="images/icon-bidder-more.png"></span>
+                    </div>
+                    <div class="bidding-list-days">
+                        <span class="icon"><img src="images/icon-fav-s.svg"></span> 120
+                    </div>
+                    <div class="bidding-list-favorite">
+                        <span class="icon"><img src="images/icon-days.svg"></span> 36
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="bidding-list-item">
+                <div class="bidding-list-img">
+                    <img src="images/img-jamie.jpg">
+                </div>
+                <div class="bidding-list-detail">
+                    <h2 class="bidding-list-chef">Watsan Chantarasombat</h2>
+                    <div class="bidding-list-bidder">
+                        <img src="images/logo-hilton.jpg">
+                        <img src="images/logo-hilton.jpg">
+                        <img src="images/logo-hilton.jpg">
+                        <img src="images/logo-hilton.jpg">
+                        <img src="images/logo-hilton.jpg">
+                        <span class="icon-bidder-more"><img src="images/icon-bidder-more.png"></span>
+                    </div>
+                    <div class="bidding-list-days">
+                        <span class="icon"><img src="images/icon-fav-s.svg"></span> 120
+                    </div>
+
+                    <div class="bidding-list-favorite">
+                        <span class="icon"><img src="images/icon-days.svg"></span> 36
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="view-footer">
+    <ul class="tab-menu">
+        <li><a href="11-news-list.html" class="tab-news">News</a></li>
+        <li><a href="21-bidding.html" class="tab-bidding selected">Bidding</a></li>
+        <li><a href="#" class="tab-search">Search</a></li>
+        <li><a href="#" class="tab-me">Me</a></li>
+    </ul>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+</body>
+</html>

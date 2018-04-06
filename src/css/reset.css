@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import 'https://fonts.googleapis.com/css?family=Roboto:400';
+@import 'https://fonts.googleapis.com/css?family=Average';
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+label {
+    vertical-align: middle
+}
+
+address, em {
+    font-style: normal
+}
+
+strong, b, th {
+    font-weight: bold
+}
+
+fieldset, img {
+    border: 0;
+    vertical-align: middle
+}
+
+caption, legend {
+    width: 1px;
+    text-align: left;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999em
+}
+
+ul, ol, dl, dt, dd, li {
+    list-style: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-size: 100%
+}
+
+input, textarea, select {
+    border: 0;
+    color: #666;
+    vertical-align: middle;
+    outline: none;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block
+}
+
+div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, iframe, fieldset, input, table, tr, th, td, button, textarea, select, thead, tbody, tfoot, pre, option {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after, .clear {
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
